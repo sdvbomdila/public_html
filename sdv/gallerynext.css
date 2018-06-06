@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 3, 2018, 9:45:36 AM
+    Author     : GROSHI
+*/
+
+//black:rgba(0, 0, 0, 0.2);
+
+.containergallery {
+    position:relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  //padding: 0px 10px 10px 10px;
+  padding: 40px;
+  }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position:relative;
+  left:50%;
+  //bottom: 50%;
+  //top:50%;
+  width: 22%;
+  margin-top:-30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.containergallery:hover .image {
+  opacity: 0.5;
+}
+
+.containergallery:hover .middle {
+  opacity: 10;
+  cursor: pointer; 
+}
+
+.text {
+   border-radius: 100%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 25px 0px;
+}
